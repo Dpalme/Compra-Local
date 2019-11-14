@@ -67,7 +67,7 @@ header {
 }
 
 footer {
-    position: fixed;
+    position: absolute;
     display: flex;
 	align-items: center;
     bottom: 0;
@@ -150,10 +150,6 @@ header {
     border-style: hidden;
     outline: none;
 }
-
-/* sueter 85 */
-/* shorts 16 */
-/* faldas 23 */
 
 .clicked {
     border-radius: 1em;
