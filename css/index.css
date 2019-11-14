@@ -58,7 +58,7 @@ h3 {
     margin-top: 0;
     top: 0;
     padding: 2vw;
-    font-size: 5vw;
+    font-size: 0;
 }
 
 header {
@@ -130,7 +130,25 @@ header {
 }
 
 .container h3 {
+    font-size: 5vw !important;
     animation: Grow 0.2s linear forwards;
+}
+
+.searchBar {
+    width: 100%;
+    padding: 2vw;
+    margin: auto;
+}
+
+.searchBar input {
+    background: #ccc;
+    width: auto;
+    margin: auto;
+    border-radius: 10em;
+    padding: 4vw;
+    font-size: 5vw;
+    border-style: hidden;
+    outline: none;
 }
 
 /* sueter 85 */
@@ -153,6 +171,7 @@ header {
 }
 
 .clicked h3 {
+    font-size: 0vw;
     animation: Shrink 0.5s linear forwards;
 }
 
