@@ -1,0 +1,217 @@
+/* Fonts */
+
+
+@font-face{
+	font-family: 'Wals-Bold';
+	src:url('fonts/GT-Walsheim-Bold.woff2') format('woff2');
+}
+
+@font-face {
+    font-family: 'basier_mono';
+    src: url('fonts/GT-Walsheim-Regular.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+/* Global Variables */
+
+
+:root {
+	--bg: #eaeaea;
+	--font: #202025;
+	--accent: #679FDA;
+	--accent2: #20DD88;
+}
+
+
+/* Defaults */
+
+
+body {
+	background-color: var(--background);
+    width: 100%;
+	margin: auto;
+	background: var(--bg);
+	color: var(--font);
+	font-family: 'Roboto', sans-serif;
+}
+
+h1 {
+    font-family: 'basier_mono', sans-serif;
+    color: var(--bg); 
+    font-size: 10vw;
+    margin: auto;
+    padding: 4vw 0;
+}
+
+h2 {
+    font-family: 'Wals-Bold', sans-serif;
+    font-size: 7vw;
+    text-align: center;
+}
+
+h3 {
+	width: 100%;
+    text-align: left;
+    margin: auto;
+    margin-top: 0;
+    top: 0;
+    padding: 2vw;
+    font-size: 5vw;
+}
+
+header {
+    background: var(--accent);
+    text-align: center;
+}
+
+footer {
+    position: fixed;
+    display: flex;
+	align-items: center;
+    bottom: 0;
+    width: 100%;
+}
+
+footer a {
+    margin: auto;
+    width: 33.33%;
+    padding: 4vw 0;
+    background: var(--accent);
+	font-size: 4vw;
+	text-decoration: none;
+	color: var(--bg);
+	font-family: 'basier_mono', sans-serif;
+	text-align: center;
+	line-height: 3vw;
+}
+
+footer a:hover {
+	animation: Fade 0.2s linear forwards;
+}
+
+footer svg {
+    width: 30%;
+}
+
+header {
+	width:100%;
+}
+
+
+/* Classes */
+
+
+.active {
+    background: var(--accent2);
+    box-shadow: 0.1rem 0.1rem #0002;
+}
+
+.content {
+    width: 100%;
+    margin-bottom: 20vw;
+}
+
+.container {
+    background: #ccc;
+    border-radius: 1em;
+    margin: 2vw;
+    overflow: hidden;
+}
+
+.container h2 {
+    width: 100%;
+    margin: auto;
+    margin-top: 0;
+    top: 0;
+    padding: 3vw 0vw;
+    background: var(--accent);
+}
+
+.container h3 {
+    animation: Grow 0.2s linear forwards;
+}
+
+/* sueter 85 */
+/* shorts 16 */
+/* faldas 23 */
+
+.clicked {
+    border-radius: 1em;
+    margin: 2vw;
+    overflow: hidden;
+}
+
+.clicked h2 {
+    width: 100%;
+    margin: auto;
+    margin-top: 0;
+    top: 0;
+    padding: 2vw 0vw;
+    background: var(--accent);
+}
+
+.clicked h3 {
+    animation: Shrink 0.5s linear forwards;
+}
+
+/* Scrollbar */
+
+
+::-webkit-scrollbar {
+	width: 10px;
+}
+
+::-webkit-scrollbar-track {
+	background: #070707;
+}
+
+::-webkit-scrollbar-thumb {
+	background: #151515;
+}
+
+::-webkit-scrollbar-thumb:hover {
+	background: #151515;
+}
+
+
+/* Selection */
+
+
+::-moz-selection {
+	background: var(--bg);
+	color: var(--font);
+}
+
+::selection {
+	background: var(--bg);
+	color: var(--font);
+}
+
+@keyframes Fade {
+	100% {
+		background: var(--accent2);
+		box-shadow: 0.1rem 0.1rem #0002;
+	}
+}
+
+@keyframes Shrink {
+    100% {
+        font-size: 0;
+        margin: 0;
+        padding: 0;
+    }
+}
+
+@keyframes Grow {
+    100% {
+        width: 100%;
+        text-align: left;
+        margin: auto;
+        margin-top: 0;
+        top: 0;
+        padding: 2vw;
+    }
+}
+

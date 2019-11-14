@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <style>@import url('https://fonts.googleapis.com/css?family=Roboto:300&display=swap');</style>
+    <title>Compra Local</title>
+    <script src="index.js"></script>
+    <link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+    <header>
+        <h1>Compra Local</h1>
+    </header>
+
+    <div class="content">
+        <div onclick="Carnicero()" class="container" id="Carnicero">
+            <h2>Carnicero Joel</h2>
+            <h3>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eos deleniti dolorum fuga minima optio voluptates voluptate assumenda
+                dicta sed ipsum voluptatem quibusdam quia, reprehenderit ipsam. Mollitia maxime quibusdam inventore accusantium.</h2>            
+        </div>
+        <div onclick="Verduras()" class="clicked" id="Verduras">
+            <h2>Verduras Lupita</h2>
+            <h3>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eos deleniti dolorum fuga minima optio voluptates voluptate assumenda
+                dicta sed ipsum voluptatem quibusdam quia, reprehenderit ipsam. Mollitia maxime quibusdam inventore accusantium.</h2>            
+        </div>
+        <div onclick="Mac()" class="clicked" id="Mac">
+            <h2>Música Mac Miller</h2>
+            <h3>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eos deleniti dolorum fuga minima optio voluptates voluptate assumenda
+                dicta sed ipsum voluptatem quibusdam quia, reprehenderit ipsam. Mollitia maxime quibusdam inventore accusantium.</h2>            
+        </div>
+    </div>
+    
+    <footer>
+        <a onclick="Inicio()" id="Home" class="active">
+            <svg viewBox="0 0 100 100">
+                <g transform="translate(10 5) scale(0.8 0.9)">
+                    <path d="M 0 30 v 70 h 100 v -70 l -50 -30 z" stroke="currentColor" stroke-width="10" fill="none" stroke-linejoin="round"
+                    stroke-linecap="round" />
+                </g>
+            </svg>
+        </a>
+        <a onclick="Buscar()" id="Search">
+            <svg viewBox="0 0 100 100">
+                <g transform="translate(5 5) scale(0.9 0.9)">
+                    <circle cx="45" cy="38" r="38" stroke="currentColor" stroke-width="10" fill="none" />
+                    <line x1="66" y1="65" x2="100" y2="100" stroke="currentColor" stroke-width="10" />
+                </g>
+            </svg>
+        </a>
+        <a onclick="Yo()" id="Me">
+            <svg viewBox="0 0 100 100">
+                <g transform="translate(5 5) scale(0.9 0.9)">
+                <circle cx="50" cy="35" r="18" stroke="currentColor" stroke-width="10" fill="none" />
+                <rect x="15" y="75" width="70" height="50" rx="25" stroke="currentColor" stroke-width="10" fill="none" />
+                </g>
+            </svg>
+        </a>
+    </footer>
+</body>
+</html>
