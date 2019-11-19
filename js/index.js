@@ -83,12 +83,12 @@ function imageContainer(title, text, url, ppUrl){
     topDiv.setAttribute("onclick", 'Perfil("' + title + '", "' + text + '", "' + ppUrl + '")');
     mainDiv.appendChild(topDiv);
 
-    var imgHTML = document.createElement("img");
-    imgHTML.setAttribute("src", url)
-    mainDiv.appendChild(imgHTML);
     var textHTML = document.createElement("h3");
     textHTML.innerText = text;
     mainDiv.appendChild(textHTML);
+    var imgHTML = document.createElement("img");
+    imgHTML.setAttribute("src", url)
+    mainDiv.appendChild(imgHTML);
     mainDiv.classList.add('container');
     return mainDiv;
     
