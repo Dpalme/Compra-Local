@@ -233,24 +233,25 @@ footer svg {
 .message {
     position: fixed;
     top: 0;
-    margin-top: 5vw;
+    margin-top: 1vw;
     width: 100%;
-    padding: 3vw 0;
+    padding: 1vw 0;
     display: flex;
     flex-direction: row;
     box-shadow: 0 1px 1px  #0003, 0 2px 4px #0006;
 }
 
 .message img {
-    height: 12vw;
+    height: 5vw;
     margin-left: 5vw;
-    width: 12vw;
+    width: 5vw;
     border-radius: 50%;
 }
 
 .message h2 {
     width: 50%;
-    margin: auto;
+    margin:auto;
+    margin-left: 4vw;
     top: 0;
     padding: 1vw 0vw;
     text-align: left;
@@ -259,22 +260,22 @@ footer svg {
 
 .bottomMessage {
     position: fixed;
-    bottom: 20vw;
+    bottom: 4vw;
     margin-top: 25vw;
     width: 100%;
-    padding: 3vw 0;
+    padding: 1vw 0;
     display: flex;
     flex-direction: row;
 }
 
 .bottomMessage input {
     background: transparent;
-    width: 60%;
+    width: 80%;
     margin-left: 5vw;
     margin-right: 5vw;
     border-radius: .2em;
-    padding: 4vw;
-    font-size: 5vw;
+    padding: 1vw;
+    font-size: 1vw;
     border-style: solid;
     border-color: var(--font);
     border-width: 2px;
@@ -283,7 +284,7 @@ footer svg {
 
 .bottomMessage a {
     position: absolute;
-    padding: 5vw;
+    padding: 1vw;
     text-align: center;
     right: 5vw;
 }
