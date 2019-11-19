@@ -69,6 +69,7 @@ function Container(title, text, imgUrl){
     return mainDiv;
 }
 
+
 function imageContainer(title, text, url, ppUrl){
     var mainDiv = document.createElement("div");
 
@@ -156,6 +157,7 @@ function Inicio(){
     document.getElementById("content").appendChild(Container("Zapatero", "Hola, ya quedaron los zapatos para vestir que me trajo el otro día", "https://scene7.zumiez.com/is/image/zumiez/pdp_hero/Vans-Old-Skool-Logo-Mix-Black-%26-White-Shoes-_298128.jpg"));
 }
 
+
 function Buscar(){
     
     while (content.firstChild) {
@@ -178,6 +180,7 @@ function Buscar(){
     mainDiv.classList.add("searchBar");
     document.getElementById("content").appendChild(mainDiv);
 }
+
 
 function Yo(){
     Perfil("Luis Enrique", "el pollo de pollo", "https://pbs.twimg.com/profile_images/1179587726380691456/QymL-7J6_400x400.jpg");
