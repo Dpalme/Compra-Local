@@ -20,9 +20,7 @@
 
 :root {
 	--bg: #fff;
-	--font: #202025;
-	--accent: #679FDA;
-	--accent2: #20DD88;
+	--font: #000;
 }
 
 
@@ -30,8 +28,8 @@
 
 
 body {
-	background-color: var(--background);
     width: 100%;
+    height: 60vh;
 	margin: auto;
 	background: var(--bg);
 	color: var(--font);
@@ -59,22 +57,20 @@ h3 {
     font-size: 0;
 }
 
-header {
-    margin: 3vw;
-    margin-left: 5vw;
-    display: flex;
-    width: 100%;
-    flex-direction: row;
-    text-align: center;
+a {
+    text-decoration: none;
 }
 
-header p{
-    margin: 0;
-    font-family: 'basier_mono', sans-serif;
+header {
+    position: fixed;
+    width: 100%;
+    height: 7vw;
+    background: var(--bg);
 }
 
 footer {
-    position: absolute;
+    background: var(--bg);
+    position: fixed;
     display: flex;
 	align-items: center;
     bottom: 0;
@@ -98,27 +94,26 @@ footer svg {
     width: 30%;
 }
 
-header {
-	width:100%;
-}
-
 
 /* Classes */
 
 
 .active {
-    color: #000;
+	color: var(--font);
 }
 
 .content {
     width: 100%;
+    padding: 5vw 0;
+    margin-bottom: 15vw;
 }
 
 .container {
     border-radius: 1em;
     padding: 3vw;
     margin: 2vw;
-    overflow: hidden;
+    background: #fff;
+    box-shadow: 0 1px 1px #0002, 0 2px 4px #0004;
 }
 
 .container h2 {
@@ -126,15 +121,20 @@ header {
     margin: auto;
     margin-top: 0;
     top: 0;
-    padding: 3vw 0vw;
+    padding: 1vw 0vw;
     text-align: left;
-    color: #000;
+	color: var(--font);
 }
 
 .container h3 {
     font-size: 5vw !important;
     text-align: left;
     font-family: 'Roboto', Arial, Helvetica, sans-serif;
+}
+
+.container img {
+    width: 100%;
+    border-radius: .5em;
 }
 
 .searchBar {
@@ -156,13 +156,15 @@ header {
 }
 
 .highlight {
-    background: #000 !important;
-    color: #fff !important;
+    background: var(--font) !important;
+	color: var(--bg) !important;
 }
 
 .profileButtons {
     display: flex;
     flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
     width: 80%;
     margin: auto;
 }
@@ -171,16 +173,38 @@ header {
     padding: 3vw;
     text-align: center;
     background: transparent;
-    color: #000;
+	color: var(--font);
     width: 90%;
     border-radius: .5em;
     font-size: 5vw;
     border-style: solid;
     border-width: 2px;
-    border-color: #000;
+    border-color: var(--font);
     outline: none;
     margin-top: 2vw;
 }
+
+.profilePicture {
+    border-radius: 50%;
+    width: 50%;
+    left:50%;
+    transform: translateX(50%);
+}
+
+.profileInfo {
+    margin-bottom: 3vw;
+}
+
+.profileInfo h2{
+    text-align: center;
+    margin: auto;
+}
+
+.profileInfo h3{
+    text-align: center;
+    font-size: 5vw !important;
+}
+
 
 /* Scrollbar */
 
@@ -213,11 +237,4 @@ header {
 ::selection {
 	background: var(--bg);
 	color: var(--font);
-}
-
-@keyframes Fade {
-	100% {
-		background: var(--accent2);
-		box-shadow: 0.1rem 0.1rem #0002;
-	}
 }
