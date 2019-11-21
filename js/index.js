@@ -3,13 +3,15 @@ var inverted = false;
 
 function Invert(){
     if(inverted){
-        document.documentElement.style.setProperty('--bg', "#fff");
-        document.documentElement.style.setProperty('--font', "#000");
+        document.documentElement.style.setProperty('--bg', "#ECE5E3");
+        document.documentElement.style.setProperty('--font', "#381F54");
+        document.documentElement.style.setProperty('--shadow', "20,20,20");
         inverted = false;
     }
     else{
-        document.documentElement.style.setProperty('--bg', "#000");
-        document.documentElement.style.setProperty('--font', "#fff");
+        document.documentElement.style.setProperty('--bg', "#381F54");
+        document.documentElement.style.setProperty('--font', "#ECE5E3");
+        document.documentElement.style.setProperty('--shadow', "20, 20, 20");
         inverted = true;
     }
 }
@@ -91,8 +93,8 @@ function imageContainer(title, text, url, ppUrl){
     imgHTML.setAttribute("src", url)
     mainDiv.appendChild(imgHTML);
     mainDiv.classList.add('container');
+
     return mainDiv;
-    
 }
 
 
@@ -150,7 +152,7 @@ function Inicio(){
     document.getElementById("Me").classList.remove('active');
     
     var title = document.createElement("h1");
-    title.innerText = "Inicio";
+    title.innerText = "Avisos de tus mercaderes";
     document.getElementById("content").appendChild(title);
     document.getElementById("content").appendChild(Container("Carnicero", "Hola, soy su carnicero Joel, esta semana igual va a querer arrachera?", "https://st2.depositphotos.com/4403291/7142/v/950/depositphotos_71424065-stock-illustration-meat-logo-design.jpg"));
     document.getElementById("content").appendChild(imageContainer("Verduras", "Hola, sólo para avisar que el cilantro de hoy está especialmente fresco", "https://pbs.twimg.com/media/EJrBYgZU8AE6-lH?format=jpg", "https://dynamic.brandcrowd.com/asset/logo/ab6f2127-10f8-49dd-a8ab-f91915a9bc4f/logo?v=4"));
@@ -181,7 +183,7 @@ function Buscar(){
     document.getElementById("content").appendChild(mainDiv);
 }
 
-
+ 
 function Yo(){
     Perfil("Luis Enrique", "el pollo de pollo", "https://pbs.twimg.com/profile_images/1179587726380691456/QymL-7J6_400x400.jpg");
 }

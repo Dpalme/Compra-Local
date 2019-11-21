@@ -19,8 +19,10 @@
 
 
 :root {
-	--bg: #fff;
-    --font: #000;
+	--bg: #ECE5E3;
+    --font: #381F54;
+    --accent: #179F47;
+    --shadow: 20,20,20;
 }
 
 
@@ -84,7 +86,7 @@ footer a {
     padding: 1vw 0;
     font-size: 4vw;
     text-decoration: none;
-    color: #666;
+    color: #999;
     font-family: 'basier_mono', sans-serif;
     text-align: center;
     line-height: 3vw;
@@ -115,7 +117,7 @@ footer svg {
     margin: auto;
     margin-bottom: 2vw;
     background: var(--bg);
-    box-shadow: 0 1px 1px  #0003, 0 2px 4px #0006;
+    box-shadow: 0 1px 1px  rgba(var(--shadow), .3), 0 2px 4px rgba(var(--shadow), .7);
     margin-bottom: 3vw;
 }
 
@@ -126,7 +128,9 @@ footer svg {
     margin-bottom: 1vw;
     padding: 1vw 0vw;
     text-align: left;
-    color: var(--font);
+    color: var(--accent);
+    text-decoration: underline;
+    cursor: pointer;
 }
 
 .container h3 {
@@ -288,8 +292,6 @@ footer svg {
     text-align: center;
     right: 5vw;
 }
-
-
 
 
 
