@@ -19,9 +19,9 @@
 
 
 :root {
-	--bg: #ECE5E3;
-    --font: #101154;
-    --accent: #179F47;
+	--bg: #fff;
+    --font: #111;
+    --accent: #E20202;
     --shadow: 20,20,20;
 }
 
@@ -101,7 +101,7 @@ footer svg {
 
 
 .active {
-    color: var(--font);
+    color: var(--accent);
 }
 
 .content {

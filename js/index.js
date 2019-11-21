@@ -3,14 +3,14 @@ var inverted = false;
 
 function Invert(){
     if(inverted){
-        document.documentElement.style.setProperty('--bg', "#ECE5E3");
-        document.documentElement.style.setProperty('--font', "#381F54");
+        document.documentElement.style.setProperty('--bg', "#fff");
+        document.documentElement.style.setProperty('--font', "#111");
         document.documentElement.style.setProperty('--shadow', "20,20,20");
         inverted = false;
     }
     else{
-        document.documentElement.style.setProperty('--bg', "#381F54");
-        document.documentElement.style.setProperty('--font', "#ECE5E3");
+        document.documentElement.style.setProperty('--bg', "#111");
+        document.documentElement.style.setProperty('--font', "#fff");
         document.documentElement.style.setProperty('--shadow', "20, 20, 20");
         inverted = true;
     }
