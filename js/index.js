@@ -152,7 +152,7 @@ function Inicio(){
     document.getElementById("Me").classList.remove('active');
     
     var title = document.createElement("h1");
-    title.innerText = "Avisos de tus mercaderes";
+    title.innerText = "Avisos de tus comerciantes";
     document.getElementById("content").appendChild(title);
     document.getElementById("content").appendChild(Container("Carnicero", "Hola, soy su carnicero Joel, esta semana igual va a querer arrachera?", "https://st2.depositphotos.com/4403291/7142/v/950/depositphotos_71424065-stock-illustration-meat-logo-design.jpg"));
     document.getElementById("content").appendChild(imageContainer("Verduras", "Hola, sólo para avisar que el cilantro de hoy está especialmente fresco", "https://pbs.twimg.com/media/EJrBYgZU8AE6-lH?format=jpg", "https://dynamic.brandcrowd.com/asset/logo/ab6f2127-10f8-49dd-a8ab-f91915a9bc4f/logo?v=4"));
